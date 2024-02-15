@@ -13,7 +13,7 @@ rServer.use(express.json())
 rServer.use(router)
 
 
-const PORT=3000
+const PORT=3000 || process.env.PORT
 rServer.listen(PORT,()=>{
     console.log(`rServer started at : ${PORT}`);
 })
